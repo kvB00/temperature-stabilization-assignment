@@ -146,4 +146,14 @@ Open four terminals and in each one run:
 
 The book is written is a very conversational style that is both enjoyable and accessible. I think you will enjoy reading it. Give it a try if you have time. If you want just to learn about serialization in network communication then read the Section **7.5 Serialization—How to Pack Data** (https://beej.us/guide/bgnet/html/split-wide/slightly-advanced-techniques.html#serialization). 
 
- 
+SOLUTION:
+
+![Screenshot Client 1](Client1.png)
+![Screenshot Client 2](Client2.png)
+![Screenshot Client 3](Client3.png)
+![Screenshot Client 4](Client4.png)
+![Solution](Solution.png)
+
+
+First, the files in the repository need to be compiled in order to establish and run the client server connection. Once the connection has been established and the server is listening for clients. The commands as mentioned in the example is used and has an index and a temperature value that will be transmitted between client and server. There will be a total of four clients, and they will all send their temperature to the server. The server will then perform necessary calculations in order to stabilize the temperature. A communication between clients and server is then working as the central and external temperatures are being calculated and transmitted with the ultimate goal of achieving stability.
+These transactions are repeated until the two last central temperature recorded have a difference less than 0.001, signifying that the difference is so insignificant it can be deemed similar enough to be called stable.
